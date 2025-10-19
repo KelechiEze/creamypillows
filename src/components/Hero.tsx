@@ -113,39 +113,39 @@ const Hero = () => {
           </div>
 
           <div className="hero-social">
-  <motion.a 
-    href="https://facebook.com/yourpage"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="social-btn"
-    whileHover={{ scale: 1.1 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    <Facebook size={20} />
-  </motion.a>
+            <motion.a 
+              href="https://facebook.com/yourpage"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-btn"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Facebook size={20} />
+            </motion.a>
 
-  <motion.a 
-    href="https://twitter.com/yourhandle"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="social-btn"
-    whileHover={{ scale: 1.1 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    <Twitter size={20} />
-  </motion.a>
+            <motion.a 
+              href="https://twitter.com/yourhandle"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-btn"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Twitter size={20} />
+            </motion.a>
 
-  <motion.a 
-    href="https://www.instagram.com/creamypillows.ng?igsh=dGo0MGY1MmtmbDh1&utm_source=qr"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="social-btn"
-    whileHover={{ scale: 1.1 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    <Instagram size={20} />
-  </motion.a>
-            </div>
+            <motion.a 
+              href="https://www.instagram.com/creamypillows.ng?igsh=dGo0MGY1MmtmbDh1&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-btn"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Instagram size={20} />
+            </motion.a>
+          </div>
 
         </motion.div>
 
@@ -224,27 +224,36 @@ const Hero = () => {
 
           {/* Mobile Social Icons */}
           <div className="hero-social-mobile">
-            <motion.button 
+            <motion.a 
+              href="https://facebook.com/yourpage"
+              target="_blank"
+              rel="noopener noreferrer"
               className="social-btn-mobile"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
               <Facebook size={20} />
-            </motion.button>
-            <motion.button 
+            </motion.a>
+            <motion.a 
+              href="https://twitter.com/yourhandle"
+              target="_blank"
+              rel="noopener noreferrer"
               className="social-btn-mobile"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
               <Twitter size={20} />
-            </motion.button>
-            <motion.button 
+            </motion.a>
+            <motion.a 
+              href="https://www.instagram.com/creamypillows.ng?igsh=dGo0MGY1MmtmbDh1&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
               className="social-btn-mobile"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
               <Instagram size={20} />
-            </motion.button>
+            </motion.a>
           </div>
 
           {/* Scroll Down Button for Mobile */}

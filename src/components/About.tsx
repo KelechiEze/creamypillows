@@ -3,14 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import './About.css';
 
-// ✅ No imports from "@/assets" — all images now come from the public folder via /images/...
-// Make sure these are inside /public/images/ like:
-// public/images/about-background.jpg
-// public/images/owner-passion.jpg
-// public/images/owner-craft.jpg
-// public/images/owner-quality.jpg
-// public/images/owner-community.jpg
-
 interface CardData {
   id: number;
   image: string;
@@ -27,38 +19,38 @@ const About = () => {
     {
       id: 1,
       image: '/abt1.jpeg',
-      title: 'THE PASSION',
-      description: 'Baking has been my lifelong dream, turning flour and love into memorable moments for our community.',
+      title: 'THE STRATEGIST',
+      description: 'Transforming abstract concepts into compelling brand narratives that resonate with target audiences.',
       fullDescription:
-        "From childhood memories of baking with my grandmother to opening this bakery, every day is a celebration of passion. I believe that baking is not just about creating delicious treats, but about crafting experiences that bring joy to people's lives. Each recipe I develop carries a piece of my heart, and every smile from a satisfied customer reminds me why I fell in love with this craft. My journey has taught me that the secret ingredient in every recipe is genuine care and dedication.",
-      info: 'Started baking at age 7 with grandmother',
+        "As a creative strategist, I bridge the gap between creative vision and strategic execution. My approach involves deep market analysis, audience insights, and brand positioning to develop strategies that not only look beautiful but drive meaningful results. I believe that every brand has a unique story waiting to be told, and my role is to craft that narrative in a way that captivates and converts. From initial concept to final execution, I ensure that every element serves a strategic purpose while maintaining creative excellence.",
+      info: 'Developed 50+ brand strategies across various industries',
     },
     {
       id: 2,
       image: '/sample1.jpeg',
-      title: 'THE CRAFT',
-      description: 'Years of perfecting traditional recipes combined with innovative techniques create our signature style.',
+      title: 'THE CONTENT CREATOR',
+      description: 'Crafting unforgettable social media experiences that make brands look, sound, and feel exceptional.',
       fullDescription:
-        'Mastering the art of baking requires patience, practice, and an unwavering commitment to excellence. I spent years studying under master bakers, learning traditional European techniques while developing my own unique approach. Every cake, pastry, and bread that leaves our kitchen represents countless hours of experimentation and refinement. I believe in using time-honored methods while embracing innovation, ensuring that each creation is both rooted in tradition and refreshingly modern. The craft of baking is a lifelong journey, and I wake up every day excited to learn something new.',
-      info: 'Trained in Paris for 5 years perfecting artisan techniques',
+        'In today\'s digital landscape, social media is the frontline of brand perception. As a social media manager, I don\'t just post content—I create immersive experiences that build community and drive engagement. My expertise spans content strategy, visual storytelling, and community management, ensuring brands maintain a consistent and compelling presence across all platforms. I specialize in developing content that not only stops the scroll but creates lasting impressions, turning followers into brand advocates.',
+      info: 'Managed social media for 20+ brands with 300% average growth',
     },
     {
       id: 3,
       image: '/sample2.jpeg',
-      title: 'THE QUALITY',
-      description: 'Only the finest ingredients make it into our kitchen, sourced locally whenever possible for maximum freshness.',
+      title: 'THE EVENT CURATOR',
+      description: 'Designing memorable events that transform brand visions into immersive, real-world experiences.',
       fullDescription:
-        "Quality is never an accident; it's always the result of intelligent effort and careful selection. I personally visit local farms and suppliers to ensure we're using the freshest, highest-quality ingredients available. From organic flour to farm-fresh eggs, every component matters. I believe that you can taste the difference when ingredients are chosen with care and respect. This commitment to quality means our products not only taste better but also support our local community. When you bite into one of our creations, you're experiencing the result of relationships built on trust and a shared commitment to excellence.",
-      info: 'Partnered with 15 local farms for organic ingredients',
+        "Event curation is about creating moments that matter. I approach each event as a storytelling opportunity, where every detail—from venue selection to attendee journey—contributes to a cohesive brand experience. My background in creative strategy allows me to design events that not only impress but align perfectly with brand objectives. Whether it's a product launch, corporate gathering, or community event, I ensure each moment is strategically crafted to reinforce brand identity and create lasting memories.",
+      info: 'Curated 30+ successful events with 95% attendee satisfaction',
     },
     {
       id: 4,
       image: '/abt4.jpeg',
-      title: 'THE COMMUNITY',
-      description: 'Building relationships with customers and being part of your celebrations is what makes this journey special.',
+      title: 'THE LOGISTICS LEAD',
+      description: 'Bringing creative visions to life through meticulous planning and flawless execution behind the scenes.',
       fullDescription:
-        'A bakery is more than a business—it’s a gathering place where community bonds are strengthened over shared treats and warm conversations. I cherish every interaction with our customers, from helping plan wedding cakes to providing daily bread for families. Your stories, celebrations, and even simple morning coffee visits inspire everything we do. I believe in giving back to the community that has supported us, which is why we partner with local charities and schools. Seeing our bakery become a cherished part of people’s routines and special moments fills my heart with gratitude every single day.',
-      info: 'Donated over 5,000 pastries to local charities annually',
+        'While creativity drives the vision, logistics make it reality. My role as logistics lead involves orchestrating the complex details that turn ambitious ideas into achievable projects. I thrive on solving operational challenges and ensuring that every campaign, event, or launch runs smoothly. This behind-the-scenes work is what allows creative concepts to shine without being hindered by practical constraints. My systematic approach to project management ensures that we deliver exceptional results on time and within budget, every time.',
+      info: 'Managed logistics for campaigns with 100% on-time delivery',
     },
   ];
 
@@ -96,7 +88,7 @@ const About = () => {
     <>
       <section className="about-section" id="about">
         <div className="about-background">
-          <img src="/about-background.PNG" alt="Bakery background" />
+          <img src="/about-background.PNG" alt="Creative workspace background" />
         </div>
 
         <motion.div
@@ -108,8 +100,9 @@ const About = () => {
         >
           <h2 className="about-title">ABOUT ME</h2>
           <p className="about-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at ligula in ligula ultrices
-            vulputate at ac sapien. In justo neque, malesuada a libero et, consectetur adipiscing elit.
+            Hi, I'm Oluwatosin — a creative strategist with a serious soft spot for bringing ideas to life. ✨
+
+            Since joining RedLantan Media in January 2025, I've worn a few hats — social media manager, event curator, logistics lead — all rolled into one purpose: to make brands look, sound, and feel unforgettable.
           </p>
           <button className="about-btn">CONTACT</button>
         </motion.div>

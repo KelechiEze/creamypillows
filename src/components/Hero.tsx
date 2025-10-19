@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Facebook, Twitter, ChevronDown } from 'lucide-react';
+import { Facebook, Twitter, Instagram, ChevronDown } from 'lucide-react';
 import gsap from 'gsap';
 import './Hero.css';
 
@@ -16,7 +16,7 @@ const Hero = () => {
   const textRef = useRef<HTMLDivElement>(null);
   const backgroundRef = useRef<HTMLDivElement>(null);
 
-  // Background images for the carousel
+  // Background images for the carousel - update these to match your brand
   const backgroundImages = [
     '/heroip.jpeg',
     '/firstimage.jpeg',
@@ -97,13 +97,13 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="hero-title">
-            THE<br />BEST
+            CREATIVE<br />STRATEGIST
           </h1>
-          <h2 className="hero-subtitle">PASTRY</h2>
-          <p className="hero-or">or</p>
+          <h2 className="hero-subtitle">BRAND BUILDER</h2>
+          <p className="hero-or">&</p>
           <p className="hero-description">
-            BEST BAKERY SHOP IN TOWN<br />
-            20 YEAR BY YOUR SIDE
+            MAKING BRANDS LOOK, SOUND<br />
+            AND FEEL UNFORGETTABLE
           </p>
 
           <div className="zigzag-divider">
@@ -113,30 +113,40 @@ const Hero = () => {
           </div>
 
           <div className="hero-social">
-            <motion.button 
-              className="social-btn"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Facebook size={20} />
-            </motion.button>
-            <motion.button 
-              className="social-btn"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Twitter size={20} />
-            </motion.button>
-            <motion.button 
-              className="social-btn"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z"/>
-              </svg>
-            </motion.button>
-          </div>
+  <motion.a 
+    href="https://facebook.com/yourpage"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="social-btn"
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <Facebook size={20} />
+  </motion.a>
+
+  <motion.a 
+    href="https://twitter.com/yourhandle"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="social-btn"
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <Twitter size={20} />
+  </motion.a>
+
+  <motion.a 
+    href="https://www.instagram.com/creamypillows.ng?igsh=dGo0MGY1MmtmbDh1&utm_source=qr"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="social-btn"
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <Instagram size={20} />
+  </motion.a>
+            </div>
+
         </motion.div>
 
         {/* Desktop Right Side - Hidden on Mobile */}
@@ -152,17 +162,17 @@ const Hero = () => {
             transition={{ duration: 0.3 }}
           >
             <div className="card-content">
-              <img src="/firstimage.jpeg" alt="Organic drink" className="card-image" />
+              <img src="/firstimage.jpeg" alt="Creative work" className="card-image" />
               <div className="card-text">
-                <h3 className="card-title">Taste Our Organic<br />Great Ingredients</h3>
+                <h3 className="card-title">Social Media<br />Excellence</h3>
                 <p className="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum felis. Praesent nec lobortis sem. Duis non nulla felis.
+                  Crafting compelling social media strategies that build community, drive engagement, and make brands stand out in crowded digital spaces.
                 </p>
                 <motion.button 
                   className="card-btn"
                   whileHover={{ x: 5 }}
                 >
-                  KEEP READING
+                  SEE WORK
                 </motion.button>
               </div>
             </div>
@@ -174,15 +184,15 @@ const Hero = () => {
             transition={{ duration: 0.3 }}
           >
             <div className="card-text">
-              <h3 className="card-title">Met Our Cupcakes<br />Great Assortment</h3>
+              <h3 className="card-title">Event Curation<br />& Management</h3>
               <p className="card-description">
-                Cras rutrum iaculis viverra. Etiam odio diam, vehicula sit amet libero ut amet, elementum dapibus dui. Donec in dui urna.
+                Designing immersive brand experiences through carefully curated events that transform visions into memorable real-world moments.
               </p>
               <motion.button 
                 className="card-btn"
                 whileHover={{ x: 5 }}
               >
-                LEARN MORE
+                EXPLORE
               </motion.button>
             </div>
           </motion.div>
@@ -192,7 +202,7 @@ const Hero = () => {
             whileHover={{ y: -8 }}
             transition={{ duration: 0.3 }}
           >
-            <img src="/cakebag.png" alt="Product" className="product-image" />
+            <img src="/cakebag.png" alt="Portfolio" className="product-image" />
             <motion.button 
               className="scroll-down-btn"
               onClick={scrollToNextSection}
@@ -233,9 +243,7 @@ const Hero = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z"/>
-              </svg>
+              <Instagram size={20} />
             </motion.button>
           </div>
 

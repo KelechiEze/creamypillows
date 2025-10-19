@@ -6,21 +6,21 @@ const Services = () => {
   const services = [
     {
       icon: Calendar,
-      title: 'CORPORATE EVENTS',
-      subtitle: 'Professional Excellence',
-      description: 'Elevate your brand with seamlessly executed corporate events that leave lasting impressions.'
+      title: 'SOCIAL MEDIA MANAGEMENT',
+      subtitle: 'Strategic Presence',
+      description: 'Build compelling brand narratives across digital platforms with content that engages, converts, and builds loyal communities.'
     },
     {
       icon: Sparkles,
-      title: 'WEDDINGS',
-      subtitle: 'Dream Celebrations',
-      description: 'Transform your special day into an unforgettable celebration of love, beauty, and elegance.'
+      title: 'CREATIVE STRATEGY',
+      subtitle: 'Brand Transformation',
+      description: 'Develop innovative brand strategies that position you for market leadership and unforgettable audience connections.'
     },
     {
       icon: Users,
-      title: 'PRIVATE PARTIES',
-      subtitle: 'Personalized Experiences',
-      description: 'Create magical moments with bespoke private events tailored to your unique vision and style.'
+      title: 'EVENT CURATION',
+      subtitle: 'Immersive Experiences',
+      description: 'Design and execute memorable events that bring brand visions to life through meticulous planning and creative execution.'
     }
   ];
 
@@ -41,13 +41,12 @@ const Services = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <p className="services-label">EXCEPTIONAL</p>
-            <h2 className="services-title">Event Management Services</h2>
+            <p className="services-label">STRATEGIC</p>
+            <h2 className="services-title">Creative Services</h2>
             <p className="services-description">
-              Crafting extraordinary experiences that transcend expectations. As a passionate event manager 
-              with years of expertise, I specialize in transforming visions into reality — creating unforgettable 
-              moments that resonate long after the celebration ends. From intimate gatherings to grand corporate 
-              affairs, every detail is meticulously curated to perfection.
+              Bringing ideas to life with strategic precision and creative excellence. As a multi-faceted creative strategist, 
+              I specialize in making brands look, sound, and feel unforgettable. From social media ecosystems to immersive events, 
+              every project is approached with a unique blend of strategic thinking and creative execution that delivers measurable results.
             </p>
 
             <motion.button 
@@ -55,7 +54,7 @@ const Services = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              READ MORE
+              VIEW PORTFOLIO
             </motion.button>
           </motion.div>
         </div>
@@ -94,14 +93,14 @@ const Services = () => {
           >
             <img
               src="/eventz.PNG"
-              alt="Event Management Excellence"
+              alt="Creative Strategy Excellence"
               className="services-image"
             />
             <div className="services-image-overlay">
               <div className="services-image-content">
                 <Award size={48} />
-                <h3>10+ Years of Excellence</h3>
-                <p>Delivering unforgettable events with precision, creativity, and passion</p>
+                <h3>Multi-Hat Expertise</h3>
+                <p>Social media manager, event curator, and logistics lead rolled into one purpose-driven approach</p>
               </div>
             </div>
           </motion.div>

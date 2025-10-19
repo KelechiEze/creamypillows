@@ -99,7 +99,7 @@ const Reviews = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <img src="/smol2.jpg" alt="Customer" />
+          <img src="/revcake.jpeg" alt="Customer" />
         </motion.div>
 
         {/* Right */}

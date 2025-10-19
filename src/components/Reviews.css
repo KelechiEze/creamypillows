@@ -1,0 +1,201 @@
+.reviews-section {
+  background-color: #fff;
+  padding: 5rem 2rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+.reviews-header {
+  max-width: 700px;
+  margin: 0 auto 4rem;
+}
+
+.subtitle {
+  display: block;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #b89b68;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  align-items: stretch;
+}
+
+/* LEFT BLOCK */
+.reviews-left {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+  height: 420px;
+}
+
+.reviews-left::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  max-width: 90%;
+}
+
+.overlay-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.overlay-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.overlay-content button {
+  background: #fff;
+  color: #222;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.overlay-content button:hover {
+  background: #b89b68;
+  color: #fff;
+}
+
+/* CENTER IMAGE */
+.reviews-center img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* RIGHT BLOCK */
+.reviews-right {
+  background-color: #faf6ef;
+  color: #222;
+  text-align: center;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 420px;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.testimonial-author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-author h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.testimonial-author p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}
+
+/* NAVIGATION */
+.testimonial-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.testimonial-nav button {
+  background: none;
+  border: 1px solid #ccc;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.testimonial-nav button:hover {
+  border-color: #b89b68;
+  background: #b89b68;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-left,
+  .reviews-center,
+  .reviews-right {
+    height: 360px;
+  }
+
+  .reviews-right {
+    padding: 2rem;
+  }
+}
+
+/* Smooth animation improvements */
+.reviews-left,
+.reviews-center,
+.reviews-right {
+  will-change: transform, opacity;
+}
+
+button {
+  transition: transform 0.25s ease, background 0.25s ease;
+}

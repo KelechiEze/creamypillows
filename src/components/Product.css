@@ -1,0 +1,337 @@
+.products-section {
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, rgba(245, 230, 211, 0.3), rgba(255, 255, 255, 0.9));
+  position: relative;
+  z-index: 1; /* Added to establish stacking context */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+.products-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products-title {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+  color: #2d2d2d;
+}
+
+.products-subtitle {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: black;
+  font-style: italic;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Ensure proper positioning */
+  z-index: 2; /* Stack above section background */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-image-wrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 0;
+  overflow: hidden; /* Contain image */
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.product-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(45, 45, 45, 0.8);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 2;
+}
+
+.product-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 2;
+  color: white;
+}
+
+.product-badge.sale {
+  background: #c2955d;
+}
+
+.product-badge.new {
+  background: #2d2d2d;
+}
+
+.product-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #2d2d2d;
+  margin: 0;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #2d2d2d;
+}
+
+.product-ingredients {
+  font-size: 0.85rem;
+  color: #c2955d;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+  font-weight: 300;
+  flex: 1;
+}
+
+.product-btn {
+  background: #2d2d2d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  font-weight: 400;
+}
+
+.product-btn:hover {
+  background: #c2955d;
+  transform: translateX(5px);
+}
+
+/* Modal Styles */
+.product-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000; /* Very high z-index for modal */
+  padding: 20px;
+}
+
+.product-modal-content {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  background: white;
+  padding: 0;
+  z-index: 10001; /* Higher than overlay */
+  max-height: 95vh; /* Limit height */
+  overflow: hidden; /* Prevent modal overflow */
+}
+
+.product-modal-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.product-modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.product-modal-counter {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.product-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10002; /* Highest in modal */
+  transition: all 0.3s ease;
+}
+
+.product-modal-close:hover {
+  background: white;
+  transform: rotate(90deg);
+}
+
+.product-modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10002; /* Same as close button */
+  transition: all 0.3s ease;
+}
+
+.product-modal-nav:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.product-modal-prev {
+  left: 20px;
+}
+
+.product-modal-next {
+  right: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 800px) {
+  .products-section {
+    padding: 60px 15px; /* Reduced padding on mobile */
+  }
+
+  .products-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .products-subtitle {
+    font-size: 1rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 25px; /* Slightly increased gap */
+  }
+
+  .product-card {
+    flex-direction: column;
+    padding: 15px; /* Reduced padding on mobile */
+  }
+
+  .product-image-wrapper {
+    width: 100%;
+    height: 200px;
+  }
+
+  .product-modal-image-wrapper {
+    height: 400px;
+  }
+
+  .product-modal-nav {
+    width: 40px;
+    height: 40px;
+  }
+
+  .product-modal-prev {
+    left: 10px;
+  }
+
+  .product-modal-next {
+    right: 10px;
+  }
+
+  .product-modal-close {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/* Additional safety measures */
+@media (max-width: 480px) {
+  .products-section {
+    padding: 40px 10px;
+  }
+  
+  .products-grid {
+    gap: 20px;
+  }
+  
+  .product-card {
+    margin: 0; /* Ensure no extra margins */
+  }
+}

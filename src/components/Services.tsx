@@ -1,26 +1,26 @@
 import { motion } from 'framer-motion';
-import { Calendar, Users, Sparkles, Award } from 'lucide-react';
+import { Calendar, ClipboardCheck, Cake } from 'lucide-react';
 import './Services.css';
 
 const Services = () => {
   const services = [
     {
       icon: Calendar,
-      title: 'SOCIAL MEDIA MANAGEMENT',
-      subtitle: 'Strategic Presence',
-      description: 'Build compelling brand narratives across digital platforms with content that engages, converts, and builds loyal communities.'
-    },
-    {
-      icon: Sparkles,
-      title: 'CREATIVE STRATEGY',
-      subtitle: 'Brand Transformation',
-      description: 'Develop innovative brand strategies that position you for market leadership and unforgettable audience connections.'
-    },
-    {
-      icon: Users,
       title: 'EVENT CURATION',
       subtitle: 'Immersive Experiences',
-      description: 'Design and execute memorable events that bring brand visions to life through meticulous planning and creative execution.'
+      description: 'Design and execute memorable events that bring brand visions to life through meticulous planning, creative execution, and seamless coordination from concept to completion.'
+    },
+    {
+      icon: ClipboardCheck,
+      title: 'PROJECT MANAGEMENT',
+      subtitle: 'Strategic Execution',
+      description: 'Lead projects with precision and efficiency, ensuring timely delivery, budget management, and quality control while coordinating cross-functional teams for optimal results.'
+    },
+    {
+      icon: Cake,
+      title: 'ARTISAN BAKER',
+      subtitle: 'Culinary Creations',
+      description: 'Craft exquisite baked goods and desserts with artistic flair, combining traditional techniques with innovative flavors for memorable culinary experiences.'
     }
   ];
 
@@ -41,14 +41,16 @@ const Services = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <p className="services-label">STRATEGIC</p>
-            <h2 className="services-title">Creative Services</h2>
+            <p className="services-label">VERSATILE</p>
+            <h2 className="services-title">Professional Services</h2>
             <p className="services-description">
-              Bringing ideas to life with strategic precision and creative excellence. As a multi-faceted creative strategist, 
-              I specialize in making brands look, sound, and feel unforgettable. From social media ecosystems to immersive events, 
-              every project is approached with a unique blend of strategic thinking and creative execution that delivers measurable results.
+              Bringing diverse expertise to every project with precision and creative excellence. As a multi-faceted professional, 
+              I specialize in creating unforgettable experiences, managing complex projects, and crafting delightful culinary creations. 
+              From event coordination to project leadership and artisanal baking, every service is delivered with meticulous attention to detail and a passion for excellence.
             </p>
 
+            {/* View Portfolio Button - Commented Out */}
+            {/*
             <motion.button 
               className="services-cta"
               whileHover={{ scale: 1.05 }}
@@ -56,6 +58,7 @@ const Services = () => {
             >
               VIEW PORTFOLIO
             </motion.button>
+            */}
           </motion.div>
         </div>
       </div>
@@ -93,14 +96,14 @@ const Services = () => {
           >
             <img
               src="/eventz.PNG"
-              alt="Creative Strategy Excellence"
+              alt="Professional Services Excellence"
               className="services-image"
             />
             <div className="services-image-overlay">
               <div className="services-image-content">
-                <Award size={48} />
-                <h3>Multi-Hat Expertise</h3>
-                <p>Social media manager, event curator, and logistics lead rolled into one purpose-driven approach</p>
+                <ClipboardCheck size={48} />
+                <h3>Multi-Disciplinary Expertise</h3>
+                <p>Event curator, project manager, and artisanal baker - bringing diverse skills to create exceptional results across different domains</p>
               </div>
             </div>
           </motion.div>

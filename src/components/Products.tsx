@@ -35,7 +35,7 @@ const Products = () => {
       name: 'BANANA BREAD MINIS',
       ingredients: '3 minis - Oreo, Coconut, Plain',
       description: 'Delicious mini banana breads available in three delightful varieties. Perfect for sampling different flavors or sharing with friends.',
-      images: ['/prod1.jpeg'],
+      images: ['/reoasbreads.jpg'],
       badge: 'POPULAR',
     },
     {
@@ -43,7 +43,7 @@ const Products = () => {
       name: 'BANANA BREAD MINIS',
       ingredients: '4 minis - Oreo, Coconut, Raisins, Plain',
       description: 'A quartet of mini banana breads featuring our most popular flavors. Includes the sweet addition of raisins for extra variety.',
-      images: ['/prod2.jpg'],
+      images: ['/reoasbreads.jpg'],
       badge: 'BEST VALUE',
     },
     {
@@ -51,7 +51,7 @@ const Products = () => {
       name: 'BANANA BREAD MINIS',
       ingredients: '6 minis - Oreo, Coconut, Raisins, Plain, Chocolate Chips, Your Favorite',
       description: 'Our premium mini banana bread collection featuring all five flavors plus one of your personal favorites. The ultimate tasting experience.',
-      images: ['/prod3.jpg'],
+      images: ['/reoasbreads.jpg'],
       badge: 'PREMIUM',
     },
     {
@@ -59,7 +59,7 @@ const Products = () => {
       name: 'BIG BANANA BREAD',
       ingredients: 'Available in Plain, Oreo, Coconut, Raisins, Chocolate Chips',
       description: 'Full-sized banana bread perfect for family gatherings or special occasions. Choose from our five delicious flavor variations.',
-      images: ['/prod4.jpeg'],
+      images: ['/reosbread.jpg'],
       badge: 'FAMILY SIZE',
     },
     {
@@ -67,7 +67,7 @@ const Products = () => {
       name: 'BROWNIE SLABS 6',
       ingredients: 'Available in Plain, Oreo, Chocolate Chips',
       description: 'Rich, fudgy brownie slabs in three irresistible varieties. Perfect for chocolate lovers and special treats.',
-      images: ['/prod5.jpg'],
+      images: ['/faah.jpeg'],
       badge: 'CHOCOLATE',
     },
     {
@@ -75,7 +75,7 @@ const Products = () => {
       name: 'BROWNIE SLABS 8',
       ingredients: 'Available in Plain, Oreo, Chocolate Chips',
       description: 'Large brownie slabs for bigger gatherings or extended indulgence. Same great taste, bigger size.',
-      images: ['/prod5.jpg'],
+      images: ['/firstimage.jpeg'],
       badge: 'LARGE',
     },
 

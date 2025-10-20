@@ -205,7 +205,7 @@ const Products = () => {
         >
           <h2 className="products-title">OUR PRODUCTS</h2>
           <p className="products-subtitle">
-            Handcrafted with love and the finest ingredients
+            Handcrafted with love and the finest ingredients<br></br> Here at Creamy Pillows
           </p>
         </motion.div>
 

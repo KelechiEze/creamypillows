@@ -93,7 +93,7 @@ const Products = () => {
       name: 'RED VELVET CAKE',
       ingredients: 'Available in 6" and 8" sizes',
       description: 'Velvety smooth red velvet cake with its signature flavor and color. Uniced and wrapped for freshness.',
-      images: ['/velvet.jpg'],
+      images: ['/cakolo.jpg'],
       badge: 'PREMIUM',
     }
   ];

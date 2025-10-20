@@ -35,7 +35,7 @@ const Products = () => {
       name: 'BANANA BREAD MINIS',
       ingredients: '3 minis - Oreo, Coconut, Plain',
       description: 'Delicious mini banana breads available in three delightful varieties. Perfect for sampling different flavors or sharing with friends.',
-      images: ['/cupcake.png'],
+      images: ['/prod1.jpeg'],
       badge: 'POPULAR',
     },
     {
@@ -43,7 +43,7 @@ const Products = () => {
       name: 'BANANA BREAD MINIS',
       ingredients: '4 minis - Oreo, Coconut, Raisins, Plain',
       description: 'A quartet of mini banana breads featuring our most popular flavors. Includes the sweet addition of raisins for extra variety.',
-      images: ['/cupcake.png'],
+      images: ['/prod2.jpg'],
       badge: 'BEST VALUE',
     },
     {
@@ -51,7 +51,7 @@ const Products = () => {
       name: 'BANANA BREAD MINIS',
       ingredients: '6 minis - Oreo, Coconut, Raisins, Plain, Chocolate Chips, Your Favorite',
       description: 'Our premium mini banana bread collection featuring all five flavors plus one of your personal favorites. The ultimate tasting experience.',
-      images: ['/cupcake.png'],
+      images: ['/prod3.jpg'],
       badge: 'PREMIUM',
     },
     {
@@ -59,31 +59,33 @@ const Products = () => {
       name: 'BIG BANANA BREAD',
       ingredients: 'Available in Plain, Oreo, Coconut, Raisins, Chocolate Chips',
       description: 'Full-sized banana bread perfect for family gatherings or special occasions. Choose from our five delicious flavor variations.',
-      images: ['/cupcake.png'],
+      images: ['/prod4.jpeg'],
       badge: 'FAMILY SIZE',
     },
     {
       id: 5,
-      name: 'BROWNIE SLABS 6"',
+      name: 'BROWNIE SLABS 6',
       ingredients: 'Available in Plain, Oreo, Chocolate Chips',
       description: 'Rich, fudgy brownie slabs in three irresistible varieties. Perfect for chocolate lovers and special treats.',
-      images: ['/cupcake.png'],
+      images: ['/prod5.jpg'],
       badge: 'CHOCOLATE',
     },
     {
       id: 6,
-      name: 'BROWNIE SLABS 8"',
+      name: 'BROWNIE SLABS 8',
       ingredients: 'Available in Plain, Oreo, Chocolate Chips',
       description: 'Large brownie slabs for bigger gatherings or extended indulgence. Same great taste, bigger size.',
-      images: ['/cupcake.png'],
+      images: ['/prod5.jpg'],
       badge: 'LARGE',
     },
+
+
     {
       id: 7,
       name: 'CHOCOLATE CAKE',
       ingredients: 'Available in 6" and 8" sizes',
       description: 'Rich, moist chocolate cake wrapped in foil. Perfect uniced for those who prefer simple, classic cake enjoyment.',
-      images: ['/cupcake.png'],
+      images: ['/revcake.jpeg'],
       badge: 'CLASSIC',
     },
     {
@@ -91,7 +93,7 @@ const Products = () => {
       name: 'RED VELVET CAKE',
       ingredients: 'Available in 6" and 8" sizes',
       description: 'Velvety smooth red velvet cake with its signature flavor and color. Uniced and wrapped for freshness.',
-      images: ['/cupcake.png'],
+      images: ['/velvet.jpg'],
       badge: 'PREMIUM',
     }
   ];

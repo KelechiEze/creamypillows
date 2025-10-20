@@ -15,45 +15,44 @@ interface CardData {
 const About = () => {
   const [selectedCard, setSelectedCard] = useState<CardData | null>(null);
 
-  const cardsData: CardData[] = [
-    {
-      id: 1,
-      image: '/abt1.jpeg',
-      title: 'THE STRATEGIST',
-      description: 'Transforming abstract concepts into compelling brand narratives that resonate with target audiences.',
-      fullDescription:
-        "As a creative strategist, I bridge the gap between creative vision and strategic execution. My approach involves deep market analysis, audience insights, and brand positioning to develop strategies that not only look beautiful but drive meaningful results. I believe that every brand has a unique story waiting to be told, and my role is to craft that narrative in a way that captivates and converts. From initial concept to final execution, I ensure that every element serves a strategic purpose while maintaining creative excellence.",
-      info: 'Developed 50+ brand strategies across various industries',
-    },
-    {
-      id: 2,
-      image: '/sample1.jpeg',
-      title: 'THE CONTENT CREATOR',
-      description: 'Crafting unforgettable social media experiences that make brands look, sound, and feel exceptional.',
-      fullDescription:
-        'In today\'s digital landscape, social media is the frontline of brand perception. As a social media manager, I don\'t just post content—I create immersive experiences that build community and drive engagement. My expertise spans content strategy, visual storytelling, and community management, ensuring brands maintain a consistent and compelling presence across all platforms. I specialize in developing content that not only stops the scroll but creates lasting impressions, turning followers into brand advocates.',
-      info: 'Managed social media for 20+ brands with 300% average growth',
-    },
-    {
-      id: 3,
-      image: '/sample2.jpeg',
-      title: 'THE EVENT CURATOR',
-      description: 'Designing memorable events that transform brand visions into immersive, real-world experiences.',
-      fullDescription:
-        "Event curation is about creating moments that matter. I approach each event as a storytelling opportunity, where every detail—from venue selection to attendee journey—contributes to a cohesive brand experience. My background in creative strategy allows me to design events that not only impress but align perfectly with brand objectives. Whether it's a product launch, corporate gathering, or community event, I ensure each moment is strategically crafted to reinforce brand identity and create lasting memories.",
-      info: 'Curated 30+ successful events with 95% attendee satisfaction',
-    },
-    {
-      id: 4,
-      image: '/abt4.jpeg',
-      title: 'THE LOGISTICS LEAD',
-      description: 'Bringing creative visions to life through meticulous planning and flawless execution behind the scenes.',
-      fullDescription:
-        'While creativity drives the vision, logistics make it reality. My role as logistics lead involves orchestrating the complex details that turn ambitious ideas into achievable projects. I thrive on solving operational challenges and ensuring that every campaign, event, or launch runs smoothly. This behind-the-scenes work is what allows creative concepts to shine without being hindered by practical constraints. My systematic approach to project management ensures that we deliver exceptional results on time and within budget, every time.',
-      info: 'Managed logistics for campaigns with 100% on-time delivery',
-    },
-  ];
-
+ const cardsData: CardData[] = [
+  {
+    id: 1,
+    image: '/abt1.jpeg',
+    title: 'THE PROJECT MANAGER',
+    description: 'Bringing order to creative chaos with careful planning and collaborative leadership.',
+    fullDescription:
+      "My journey in project management has taught me that the most beautiful ideas need solid foundations to become reality. I focus on creating clear roadmaps, fostering team collaboration, and maintaining open communication throughout every project phase. What drives me is seeing a team work together seamlessly and watching initial concepts transform into finished products that make a real impact. I'm constantly learning new methodologies and approaches to make project delivery smoother and more efficient.",
+    info: 'Successfully delivered 50+ projects across multiple industries',
+  },
+  {
+    id: 2,
+    image: '/sample1.jpeg',
+    title: 'THE BAKER',
+    description: 'Discovering the art and science of baking through practice, patience, and continuous learning.',
+    fullDescription:
+      "Baking is my creative sanctuary where precision meets passion. While I'm still developing my skills, I approach each recipe as an opportunity to learn and improve. The process of transforming simple ingredients into something beautiful and delicious never fails to inspire me. I'm dedicated to mastering techniques, understanding the science behind baking, and eventually creating my own signature styles. Every batch teaches me something new, and I cherish the joy that homemade baked goods bring to others.",
+      info: 'Currently expanding skills through professional courses and practice',
+  },
+  {
+    id: 3,
+    image: '/sample2.jpeg',
+    title: 'THE EVENT CURATOR',
+    description: 'Creating meaningful experiences by paying attention to the details that make events special.',
+    fullDescription:
+      "My approach to event curation is rooted in understanding what makes moments memorable. I believe successful events aren't just about grand gestures, but about the thoughtful details that make attendees feel valued. From selecting the perfect venue to coordinating the flow of activities, I focus on creating cohesive experiences that tell a story. I'm passionate about learning how different elements—lighting, music, layout—work together to create atmosphere and connection. Each event is a chance to create something truly meaningful.",
+      info: 'Helped coordinate 30+ events with focus on attendee experience',
+  },
+  {
+    id: 4,
+    image: '/abt4.jpeg',
+    title: 'THE EVENT MANAGER',
+    description: 'Ensuring everything runs smoothly so creative visions can shine without logistical worries.',
+    fullDescription:
+      "Behind every successful event is careful planning and attention to detail. My strength lies in anticipating needs, solving problems before they arise, and creating systems that allow creative teams to focus on what they do best. I take pride in building reliable processes and contingency plans that ensure events unfold seamlessly. Whether it's coordinating vendors, managing timelines, or troubleshooting last-minute changes, I'm committed to creating the stable foundation that lets creativity flourish. I believe great event management should be invisible but essential.",
+      info: 'Managed operations for numerous events with 100% execution rate',
+  },
+];
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {

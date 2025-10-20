@@ -1,8 +1,11 @@
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Facebook, Twitter, Instagram, ChevronDown } from 'lucide-react';
+import { MessageCircle, Instagram, ChevronDown } from 'lucide-react';
 import gsap from 'gsap';
 import './Hero.css';
+
+// WhatsApp number - update this with the actual owner's number
+const WHATSAPP_NUMBER = '+2347062306141'; // Replace with actual phone number
 
 const scrollToNextSection = () => {
   window.scrollTo({
@@ -22,6 +25,13 @@ const Hero = () => {
     '/firstimage.jpeg',
     '/cakebag.png'
   ];
+
+  // WhatsApp redirect function
+  const redirectToWhatsApp = () => {
+    const message = "Hello! I'm interested in your services.";
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -113,26 +123,26 @@ const Hero = () => {
           </div>
 
           <div className="hero-social">
-            <motion.a 
-              href="https://facebook.com/yourpage"
-              target="_blank"
-              rel="noopener noreferrer"
+            <motion.button 
+              onClick={redirectToWhatsApp}
               className="social-btn"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Facebook size={20} />
-            </motion.a>
+              <MessageCircle size={20} />
+            </motion.button>
 
             <motion.a 
-              href="https://twitter.com/yourhandle"
+              href="https://www.tiktok.com/@olayinka_ceo?_t=ZS-90gldRCyz1Y&_r=1"
               target="_blank"
               rel="noopener noreferrer"
               className="social-btn"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Twitter size={20} />
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-3.77-1.105l-.001-.001z"/>
+              </svg>
             </motion.a>
 
             <motion.a 
@@ -224,25 +234,25 @@ const Hero = () => {
 
           {/* Mobile Social Icons */}
           <div className="hero-social-mobile">
+            <motion.button 
+              onClick={redirectToWhatsApp}
+              className="social-btn-mobile"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <MessageCircle size={20} />
+            </motion.button>
             <motion.a 
-              href="https://facebook.com/yourpage"
+              href="https://www.tiktok.com/@olayinka_ceo?_t=ZS-90gldRCyz1Y&_r=1"
               target="_blank"
               rel="noopener noreferrer"
               className="social-btn-mobile"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Facebook size={20} />
-            </motion.a>
-            <motion.a 
-              href="https://twitter.com/yourhandle"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-btn-mobile"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Twitter size={20} />
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-3.77-1.105l-.001-.001z"/>
+              </svg>
             </motion.a>
             <motion.a 
               href="https://www.instagram.com/creamypillows.ng?igsh=dGo0MGY1MmtmbDh1&utm_source=qr"

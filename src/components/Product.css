@@ -2,8 +2,8 @@
   padding: 100px 20px;
   background: linear-gradient(to bottom, rgba(245, 230, 211, 0.3), rgba(255, 255, 255, 0.9));
   position: relative;
-  z-index: 1; /* Added to establish stacking context */
-  overflow: hidden; /* Prevent any overflow */
+  z-index: 1;
+  overflow: hidden;
 }
 
 .products-header {
@@ -44,8 +44,8 @@
   padding: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative; /* Ensure proper positioning */
-  z-index: 2; /* Stack above section background */
+  position: relative;
+  z-index: 2;
 }
 
 .product-card:hover {
@@ -59,7 +59,7 @@
   height: 150px;
   flex-shrink: 0;
   border-radius: 0;
-  overflow: hidden; /* Contain image */
+  overflow: hidden;
 }
 
 .product-image {
@@ -125,12 +125,6 @@
   margin: 0;
 }
 
-.product-price {
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: #2d2d2d;
-}
-
 .product-ingredients {
   font-size: 0.85rem;
   color: #c2955d;
@@ -147,25 +141,45 @@
   flex: 1;
 }
 
+.product-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .product-btn {
-  background: #2d2d2d;
-  color: white;
-  border: none;
-  padding: 12px 24px;
+  padding: 12px 20px;
   font-size: 0.85rem;
   letter-spacing: 1.5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  align-self: flex-start;
   font-weight: 400;
+  border: none;
+  flex: 1;
+  min-width: 120px;
 }
 
-.product-btn:hover {
+.view-btn {
+  background: #2d2d2d;
+  color: white;
+}
+
+.view-btn:hover {
   background: #c2955d;
   transform: translateX(5px);
 }
 
-/* Modal Styles */
+.order-btn {
+  background: #c2955d;
+  color: white;
+}
+
+.order-btn:hover {
+  background: #2d2d2d;
+  transform: translateX(5px);
+}
+
+/* Product Image Modal Styles */
 .product-modal-overlay {
   position: fixed;
   top: 0;
@@ -176,7 +190,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10000; /* Very high z-index for modal */
+  z-index: 10000;
   padding: 20px;
 }
 
@@ -186,9 +200,9 @@
   width: 100%;
   background: white;
   padding: 0;
-  z-index: 10001; /* Higher than overlay */
-  max-height: 95vh; /* Limit height */
-  overflow: hidden; /* Prevent modal overflow */
+  z-index: 10001;
+  max-height: 95vh;
+  overflow: hidden;
 }
 
 .product-modal-image-wrapper {
@@ -229,7 +243,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10002; /* Highest in modal */
+  z-index: 10002;
   transition: all 0.3s ease;
 }
 
@@ -251,7 +265,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10002; /* Same as close button */
+  z-index: 10002;
   transition: all 0.3s ease;
 }
 
@@ -268,10 +282,129 @@
   right: 20px;
 }
 
+/* Order Modal Styles */
+.order-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10010;
+  padding: 20px;
+}
+
+.order-modal-content {
+  position: relative;
+  background: white;
+  padding: 40px 30px 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.order-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(45, 45, 45, 0.1);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.order-modal-close:hover {
+  background: rgba(45, 45, 45, 0.2);
+  transform: rotate(90deg);
+}
+
+.order-modal-header {
+  margin-bottom: 30px;
+}
+
+.order-modal-header h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #2d2d2d;
+  margin-bottom: 8px;
+}
+
+.order-modal-header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.social-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.social-order-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  min-width: 100px;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
+.tiktok-btn {
+  background: linear-gradient(135deg, #000000, #69C9D0);
+}
+
+.instagram-btn {
+  background: linear-gradient(135deg, #E1306C, #F77737);
+}
+
+.social-order-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.order-product-info {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.order-product-info p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
 /* Mobile Responsive */
 @media (max-width: 800px) {
   .products-section {
-    padding: 60px 15px; /* Reduced padding on mobile */
+    padding: 60px 15px;
   }
 
   .products-title {
@@ -285,17 +418,25 @@
 
   .products-grid {
     grid-template-columns: 1fr;
-    gap: 25px; /* Slightly increased gap */
+    gap: 25px;
   }
 
   .product-card {
     flex-direction: column;
-    padding: 15px; /* Reduced padding on mobile */
+    padding: 15px;
   }
 
   .product-image-wrapper {
     width: 100%;
     height: 200px;
+  }
+
+  .product-buttons {
+    flex-direction: column;
+  }
+
+  .product-btn {
+    min-width: auto;
   }
 
   .product-modal-image-wrapper {
@@ -319,9 +460,28 @@
     top: 10px;
     right: 10px;
   }
+
+  .order-modal-content {
+    padding: 30px 20px 20px;
+    margin: 20px;
+  }
+
+  .social-buttons-container {
+    gap: 15px;
+  }
+
+  .social-order-btn {
+    padding: 15px;
+    min-width: 80px;
+    font-size: 0.85rem;
+  }
+
+  .social-order-btn svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 
-/* Additional safety measures */
 @media (max-width: 480px) {
   .products-section {
     padding: 40px 10px;
@@ -332,6 +492,17 @@
   }
   
   .product-card {
-    margin: 0; /* Ensure no extra margins */
+    margin: 0;
+  }
+
+  .social-buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-order-btn {
+    flex-direction: row;
+    justify-content: center;
+    min-width: 200px;
   }
 }

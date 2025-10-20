@@ -10,17 +10,24 @@ const Reviews = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      location: "Seattle",
-      text: "The quality of products and services from this business is consistently top-notch. I've been a long-time customer, and I'm always impressed.",
-      image: "/smol3.jpg",
+      name: "Gbemisola",
+      location: "Lagos, Nigeria",
+      text: "I just Received it, Thank you so Much It's sooo Nice",
+      image: "/Gbemisola.jpeg",
     },
     {
       id: 2,
-      name: "Michael Chen",
-      location: "New York",
-      text: "Exceptional service and attention to detail. Every interaction has been professional and the results speak for themselves.",
-      image: "/smole3.jpg",
+      name: "Niyi",
+      location: "Lagos, Nigeria",
+      text: "Yes they are absolutely Amazing, Funny enough I just tried them yesterday",
+      image: "/Niyi.jpeg",
+    },
+     {
+      id: 3,
+      name: "Olayinka",
+      location: "Lagos, Nigeria",
+      text: "Great, The kids loved it. It was very Yummy",
+      image: "/Olayinka.jpeg",
     },
   ];
 

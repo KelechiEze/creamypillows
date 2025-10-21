@@ -29,6 +29,15 @@ const Footer = () => {
     delay: 200
   });
 
+  // Smooth scroll handler
+  const handleScroll = (e, targetId) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer
       className="footer"
@@ -51,26 +60,17 @@ const Footer = () => {
               </div>
 
               <p className="footer-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh condimentum
-                venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper.
+                Indulge your guests with the unforgettable taste of Creamy Pillows.  
+                From corporate events to private celebrations, we bring flavor, flair, and freshness to every table.  
+                Let’s make your next event deliciously memorable—crafted with love, served with style.
               </p>
 
               <div className="footer-socials">
-                <a href="#" aria-label="Instagram">
-                  <Instagram size={20} />
-                </a>
-                <a href="#" aria-label="YouTube">
-                  <Youtube size={20} />
-                </a>
-                <a href="#" aria-label="Facebook">
-                  <Facebook size={20} />
-                </a>
-                <a href="#" aria-label="Twitter">
-                  <Twitter size={20} />
-                </a>
-                <a href="#" aria-label="Pinterest">
-                  <Heart size={20} />
-                </a>
+                <a href="#" aria-label="Instagram"><Instagram size={20} /></a>
+                <a href="#" aria-label="YouTube"><Youtube size={20} /></a>
+                <a href="#" aria-label="Facebook"><Facebook size={20} /></a>
+                <a href="#" aria-label="Twitter"><Twitter size={20} /></a>
+                <a href="#" aria-label="Pinterest"><Heart size={20} /></a>
               </div>
             </div>
           </div>
@@ -80,45 +80,33 @@ const Footer = () => {
               <animated.div ref={aboutRef} style={aboutAnimation} className="footer-section">
                 <h4>ABOUT</h4>
                 <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonial</a></li>
-                  <li><a href="#">Faq</a></li>
-                  <li><a href="#">Payment</a></li>
+                  <li><a href="#about" onClick={(e) => handleScroll(e, 'about')}>About Us</a></li>
+                  <li><a href="#services" onClick={(e) => handleScroll(e, 'services')}>Services</a></li>
+                  <li><a href="#reviews" onClick={(e) => handleScroll(e, 'reviews')}>Testimonial</a></li>
                 </ul>
               </animated.div>
 
               <animated.div ref={contactsRef} style={contactsAnimation} className="footer-section">
                 <h4>CONTACTS</h4>
                 <ul>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Book a Table</a></li>
-                  <li><a href="#">Cost Calc.</a></li>
-                  <li><a href="#">Our Chef</a></li>
-                  <li><a href="#">About Us</a></li>
+                  <li><a href="#contact" onClick={(e) => handleScroll(e, 'contact')}>Contact Us</a></li>
+                  <li><a href="#about" onClick={(e) => handleScroll(e, 'about')}>About Us</a></li>
                 </ul>
               </animated.div>
 
               <animated.div ref={partnersRef} style={partnersAnimation} className="footer-section">
                 <h4>PARTNERS</h4>
                 <ul>
-                  <li><a href="#">Wedding</a></li>
-                  <li><a href="#">Cake Decorator</a></li>
-                  <li><a href="#">Restaurant</a></li>
-                  <li><a href="#">Coffee Shop</a></li>
-                  <li><a href="#">Flowers</a></li>
+                  <li><a href="#partners" onClick={(e) => handleScroll(e, 'partners')}>Our Partners</a></li>
+                  <li><a href="#collaborate" onClick={(e) => handleScroll(e, 'collaborate')}>Collaborate</a></li>
                 </ul>
               </animated.div>
-            </div>
-
-            <div className="footer-button">
-              <button>REQUEST IT NOW</button>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 Creamy Pillows. All rights reserved.</p>
+          <p>&copy; 2025 Creamy Pillows. All rights reserved.</p>
         </div>
       </div>
     </footer>

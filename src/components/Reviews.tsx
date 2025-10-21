@@ -22,7 +22,7 @@ const Reviews = () => {
       text: "Yes they are absolutely Amazing, Funny enough I just tried them yesterday",
       image: "/Niyi.jpeg",
     },
-     {
+    {
       id: 3,
       name: "Olayinka",
       location: "Lagos, Nigeria",
@@ -42,6 +42,7 @@ const Reviews = () => {
 
   return (
     <motion.section
+      id="reviews"
       className="reviews-section"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}

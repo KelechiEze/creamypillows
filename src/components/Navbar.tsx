@@ -167,8 +167,8 @@ const Navbar = () => {
             <li><a href="#home" className="nav-link active">HOME</a></li>
             <li><a href="#about" className="nav-link">ABOUT</a></li>
             <li><a href="#products" className="nav-link">PRODUCTS</a></li>
-            <li><a href="#pages" className="nav-link">SERVICES</a></li>
-            <li><a href="#contact" className="nav-link">CONTACT</a></li>
+            <li><a href="#services" className="nav-link">SERVICES</a></li>
+            <li><a href="#reviews" className="nav-link">REVIEWS</a></li>
           </ul>
 
           {/* WhatsApp Button with Heartbeat Animation */}
@@ -265,14 +265,14 @@ const Navbar = () => {
                 SERVICES
               </motion.a>
               <motion.a 
-                href="#contact" 
+                href="#reviews" 
                 className="nav-link"
                 variants={menuItemVariants}
                 onClick={closeMobileMenu}
                 whileHover={{ x: 10 }}
                 whileTap={{ scale: 0.95 }}
               >
-                CONTACT
+                REVIEWS
               </motion.a>
               <motion.button 
                 className="whatsapp-btn mobile-whatsapp"

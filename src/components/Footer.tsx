@@ -46,7 +46,7 @@ const Footer = () => {
               <h2 className="footer-title">Book your Events Today, Contact Us!</h2>
 
               <div className="footer-brand">
-                <h3>BAKERY SWEET</h3>
+                <h3>CREAMY PILLOWS</h3>
                 <div className="brand-tag">FOOD</div>
               </div>
 
@@ -118,7 +118,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 Bakery Sweet. All rights reserved.</p>
+          <p>&copy; 2024 Creamy Pillows. All rights reserved.</p>
         </div>
       </div>
     </footer>
